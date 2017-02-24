@@ -12,12 +12,21 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        setUI()
+    }
+    
+    func  setUI() ->() {
+        
+    let textf=UITextField(frame:CGRect(x:20, y:20, width:100, height:30))
+        textf.borderStyle = .roundedRect
+        textf.textColor = UIColor .blue
+        textf.text="0"
+        view.addSubview(textf)
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 
